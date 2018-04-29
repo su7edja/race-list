@@ -1,0 +1,11 @@
+{
+  "name": "race-list",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "bower": "^1.8.4",
+    "express": "~4.16.3",
+    "method-override": "~2.3.10",
+    "mongoose": "~5.0.15"
+  }
+}

@@ -7,6 +7,6 @@ module.exports = mongoose.model('Race', {
     name      : {type : String, default: ''},
     state     : {type : String, default: ''},
     website   : {type : String, default: ''},
-    date      : Date,
+    date      : {type : Date, default: Date.now()},
     done      : {type: Boolean, default: false}
 });

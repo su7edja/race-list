@@ -5,4 +5,19 @@
 
     <p>{{ tagline }}</p>
     <div ng-repeat="r in myRaceList">{{r.name}}</div>
+    <!-- <p>{{ myRaceList }}</div> -->
+
+
+    <form>
+        <div>
+            <!-- BIND THIS VALUE TO raceData.text IN ANGULAR -->
+            <input type="text" placeholder="Super Duper Race" ng-model="raceData">
+        </div>
+        <p>
+        	Your data: {{raceData}}
+        </p>
+        <!-- createRace() WILL CREATE NEW RACES -->
+    	<button type="submit" ng-click="createRace(raceData)">Add</button>
+    </form>
+    
 </div>

@@ -2,6 +2,7 @@ angular.module('RaceCtrl', []).controller('RaceController', function($scope, Rac
 
     $scope.tagline = 'Race everything!';
 
-    $scope.myRaceList = Race.get;
+    $scope.myRaceList = Race.get();
+    $scope.createRace = Race.create;
 
 });
